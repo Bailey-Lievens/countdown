@@ -2,7 +2,7 @@
     if(!empty($_POST)){
         $userCode = $_POST["userCode"];
         $file = fopen("result.txt", "a");
-        
+
         $txt = "0";
         $response = [
             "status" => false

@@ -115,6 +115,8 @@ body {
 
 .code_wrapper * {
     color: var(--txtColorAlt);
+    position: relative;
+    top: -2.5em;
 }
 
 .code_label {
@@ -201,5 +203,21 @@ body {
 @media ( min-width: 1300px ) {
     .left_section {
         width: 60em;
+    }
+}
+
+#code_answer {
+    width: 6em;
+    opacity: 0;
+    position: relative;
+    left: 140px;
+    top: 20px;
+    transition: .4s;
+}
+
+@media ( max-width: 380px ) {
+    #code_answer {
+        left: 100px;
+        top: -40px;
     }
 }
