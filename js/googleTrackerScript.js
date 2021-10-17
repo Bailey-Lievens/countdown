@@ -1,5 +1,5 @@
-let audioGood = new Audio('assets/roar.mp3');
-let audioBad = new Audio('assets/buzz.mp4');
+let audioGood = new Audio('assets/correct.mp3');
+let audioBad = new Audio('assets/buzz.mp3');
 
 let form = document.querySelector(".code_wrapper");
 let userInput = document.getElementById("code_input");
