@@ -59,7 +59,6 @@ body {
     display:grid;
     grid-template-columns: 120px 120px;
     grid-template-rows: 100px 100px 100px;
-    grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 50px;
 
