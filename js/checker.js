@@ -24,6 +24,8 @@ form.addEventListener("submit", function(e){
                 setTimeout(function(){ answer.style.opacity = "0"; }, 1000);
             } else {
                 audioBad.play();
+                userInput.style.border = "solid red 3px";
+                setTimeout(function(){ userInput.style.border = "solid var(--primaryBlue) 3px"; }, 1000);
             }
 
         }
