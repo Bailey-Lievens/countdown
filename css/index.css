@@ -181,9 +181,7 @@ body {
 
     #egg:hover {
         transform-origin: bottom center;
-        transform: scaleX(-1) rotate(10deg);
-        position: relative;
-        left: 50px;
+        transform: scaleX(-1) rotate(5deg);
     }
 
     .left_section {
