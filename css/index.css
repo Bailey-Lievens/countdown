@@ -177,10 +177,10 @@ body {
         user-select: none;
         margin-right: 10%;
         margin-bottom: 3em;
+        transform-origin: bottom center;
     }
 
     #egg:hover {
-        transform-origin: bottom center;
         transform: scaleX(-1) rotate(5deg);
     }
 
