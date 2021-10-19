@@ -31,7 +31,7 @@ form.addEventListener("submit", function(e){
         }
     })
     .catch(error => {
-        console.error("Error: Well something went wrong. :(  ~Bailey");
+        console.error("Error: Well something went wrong.  ~Bailey");
     })
 
     userInput.value = '';
