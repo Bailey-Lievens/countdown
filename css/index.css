@@ -41,7 +41,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--primaryBlue);
-    background: url("../assets/texture.jpg") #43b8e6;
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
     background-size: cover;
