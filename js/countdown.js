@@ -8,9 +8,23 @@ var countdownHourTitle = document.getElementById("hour_title");
 var countdownMinuteTitle = document.getElementById("minute_title");
 var countdownSecondTitle = document.getElementById("second_title");
 
+var loadingDiv = document.getElementById("loading");
+
 var countdownDate = new Date("Nov 11, 2021 11:11:11");
+var timerLoaded = false;
+var pageLoaded = false;
+
+window.onload = function() {
+    pageLoaded = true;
+}
+
+timer();
 
 var counter = setInterval(function() {
+    timer();
+}, 1000);
+
+function timer(){
     var now = new Date().getTime();
 
     var timeLeft = countdownDate - now;
@@ -57,4 +71,12 @@ var counter = setInterval(function() {
         //Go to index page
     }
 
-}, 1000);
+    timerLoaded = true;
+
+    if(pageLoaded === true && timerLoaded === true){
+        loadingDiv.style.opacity = 0;
+        loadingDiv.addEventListener("transitionend", function() {
+            loadingDiv.style.display = "none";
+        });
+    }
+}

@@ -34,6 +34,47 @@ body {
     flex-direction: column;
 }
 
+#loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primaryBlue);
+    background: url("../assets/texture.jpg") #43b8e6;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    transition: opacity 1s;
+    
+}
+
+#smallEgg{
+    transform: scaleX(-1) rotate(0deg);
+    opacity: 1;
+    height: 10%;
+    mix-blend-mode: color-burn;
+    user-select: none;
+    transform-origin: bottom center;
+    animation-name: smallEgg;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 0.25s;
+}
+
+@keyframes smallEgg {
+    0%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
 .pixel {
     font-family: var(--secondaryFont);
     color: var(--primaryYellow);
