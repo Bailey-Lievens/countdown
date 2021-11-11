@@ -65,10 +65,9 @@ function timer(){
 
     document.title = "🚀 " + days + " days until launch 🚀";
 
-    if (timeLeft < 0) {
+    if (timeLeft <= 0) {
         clearInterval(counter);
-        countdownLocation.innerHTML = "ARRIVING";
-        //Go to index page
+        document.location.replace("https://designosource.be/loading.html");
     }
 
     timerLoaded = true;

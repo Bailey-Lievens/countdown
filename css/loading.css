@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'telegraf';
+    src: url(../fonts/Telegraf-Regular.otf);
+}
+
+* {
+    font-family: telegraf;
+    color: white;
+}
+
+body {
+    background: url("../assets/texture.jpg") #43b8e6;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    max-width: 10rem;
+    text-align: center;
+}
+
+#smallEgg{
+    transform: scaleX(-1) rotate(0deg);
+    opacity: 1;
+    height: 10%;
+    mix-blend-mode: color-burn;
+    user-select: none;
+    transform-origin: bottom center;
+    animation-name: smallEgg;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 0.25s;
+}
+
+@keyframes smallEgg {
+    0%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
